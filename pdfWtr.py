@@ -4,12 +4,6 @@ import sys
 original = sys.argv[1]
 wtr = sys.argv[2]
 
-# # original_reader.merge(wtr_reader.getPage(0))	
-
-# # with open('final', 'wb') as new_file:
-# # 	original_reader.write(new_file)
-
-
 with open(original, 'rb') as input_file:
 	original_reader = PyPDF2.PdfFileReader(input_file)
 	with open(wtr, 'rb') as wtr_file:
